@@ -6,8 +6,11 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <CookbookProvider theme={grubhubRestaurant}>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Stack y={4}>
+          <img src={logo} className="App-logo" alt="logo" />
+        </Stack>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -20,6 +23,7 @@ function App() {
           Learn React
         </a>
       </header>
+      </CookbookProvider>
     </div>
   );
 }
